@@ -1,3 +1,27 @@
+/* Reset basico */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
+    background-color: rgb(242, 200, 33);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
     background-color: cornsilk;
+}
+
+.item {
+    width: 100px;
+    min-height: 100px;
+    background-color: bisque;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 32px;
 }
