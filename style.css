@@ -1,27 +1,42 @@
 /* Reset basico */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body{
-    background-color: rgb(242, 200, 33);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(242, 200, 33);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container {
-    display: flex;
-    background-color: cornsilk;
+  /*display: inline-flex; Se ajusta al amcho de las items */
+  display: flex; /* Se ajusta al espacio disponible - es el mas comun de usar  */
+  /* flex-direction:row; */ /*valor por default */
+  /* flex-direction: row-reverse; *//* valor por default izquierda a derecha */
+  /* flex-direction: column; */ /* abajo hacia arriba */
+  /* flex-direction: column-reverse; */ /* arriba hacia abajo */
+
+  justify-content: start; /* Alinea a la izquierda */
+  justify-content: end; /* Alineea a la derecha */
+  justify-content: center; /* Aliena al centro*/
+  justify-content: space-around; /* Asigna espacio al rededor de cada elemento */
+  justify-content: space-between; /* asigna espacio entre cada elemento */
+  justify-content: space-evenly;  /* asigna espacio entre los elementos y el contenedor */
+    
+  background-color: cornsilk;
+    
 }
 
 .item {
-    width: 100px;
-    min-height: 100px;
-    background-color: bisque;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    padding-top: 32px;
+  width: 100px;
+  min-height: 100px;
+  background-color: bisque;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 32px;
+  border: 1px solid black;
 }
