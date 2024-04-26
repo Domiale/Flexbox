@@ -15,18 +15,27 @@ body{
   /*display: inline-flex; Se ajusta al amcho de las items */
   display: flex; /* Se ajusta al espacio disponible - es el mas comun de usar  */
   /* flex-direction:row; */ /*valor por default */
-  /* flex-direction: row-reverse; *//* valor por default izquierda a derecha */
+   flex-direction: row-reverse; /* valor por default izquierda a derecha */
   /* flex-direction: column; */ /* abajo hacia arriba */
   /* flex-direction: column-reverse; */ /* arriba hacia abajo */
 
-  justify-content: start; /* Alinea a la izquierda */
-  justify-content: end; /* Alineea a la derecha */
+  /*justify-content: start; /* Alinea a la izquierda */
+  /*justify-content: end; /* Alineea a la derecha */
   justify-content: center; /* Aliena al centro*/
-  justify-content: space-around; /* Asigna espacio al rededor de cada elemento */
-  justify-content: space-between; /* asigna espacio entre cada elemento */
-  justify-content: space-evenly;  /* asigna espacio entre los elementos y el contenedor */
+  /*justify-content: space-around; /* Asigna espacio al rededor de cada elemento */
+  /*justify-content: space-between; /* asigna espacio entre cada elemento */
+  /*justify-content: space-evenly;  /* asigna espacio entre los elementos y el contenedor */
     
   background-color: cornsilk;
+
+  height: 500px;
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  align-items: center;
+  /* align-items: stretch; */ /* Crece los elementos en la altura del espacio disponible, los itemns no deben tener alto definido  */
+  /* align-items: baseline; */ /* Alinea los items en funcion de la linea base del texto que contienen. Independientemente del tamaño de texto, ubicacion del contenido y altura del item */
+
+
     
 }
 
@@ -40,3 +49,38 @@ body{
   padding-top: 32px;
   border: 1px solid black;
 }
+
+/* Vamos a usar pseudoclases para seleccionar los items individualmente */
+
+/* 1.- Cada item debe tener un tamaño de fuente distinto.
+2.- Cada item debe tener un padding top distinto 
+3.- Cada item debe tener un alto distinto.Que no exceda el alto del contenedor
+*/
+
+/* .item:nth-child(1) {
+  background-color: chocolate;
+  font-size: 18px;
+  padding-top: 30px;
+  height: 60px;
+} */
+
+/* .item:nth-child(2) {
+  background-color: rgb(210, 186, 30);
+  font-size: 22px;
+  padding-top: 70px;
+  height: 57px;
+} */
+
+/* .item:nth-child(3) {
+  background-color: rgb(210, 30, 30);
+  font-size: 35px;
+  padding-top: 57px;
+  height: 128px;
+} */
+
+/* .item:nth-child(4) {
+  background-color: rgb(255, 221, 0);
+  font-size: 80px;
+  padding-top: 20px;
+  height: 300px;
+} */
