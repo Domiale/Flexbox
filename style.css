@@ -13,31 +13,32 @@
   
   .container {
     display: flex;
-    flex-direction: row; /*  este es el valor por defoult */
-    flex-direction: column ; /* cambia de direccion el eje principal */
     background-color: cornsilk;
   }
   
   /* Propiedades de flexbox para los items 
   
-  *flex - basis -> tamaño del main size del elemento. es como un "width" ancho base del elemento 
-  
-    Cuando flex direction: row / row reverse -> flex basis - ancho 
-    Cuando flrx direction: colum / colum reverse -> flex basis - alto 
-    
-    Flex-bases es relativa al espacio disponible del contenedor. Si no hay espacio suficiente los elementos no creceran mas alla
-  
-    Si tengo flex basis declarado el width no funciona 
+  *flex - grow ->  Esta propiedad ajusta al factor de crecimiento de los elementos, en funcion del espacio disponible. el valor por default es "auto"
+
+  Esta propiedad recibe valores númericos: 1,2,3,4...  El numero que coloquemos es el factor de crecimiento 
   
   */
   
   .item {
-    flex-basis: 100px;
-    height: 500px;
-    width: 500px;
+    flex-grow: auto; /* Este es el valor por default */
+    flex-grow: 8; /* Va a hacer que todos los itmes crezcan con el mismo factor */
+
     background-color: bisque;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     border: 1px solid black;
+  }
+
+  .cuchurrumin {
+    flex-grow: 4; /* El item  */
+  }
+
+  .hola {
+    flex-grow: 1;
   }
